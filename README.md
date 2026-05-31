@@ -1,9 +1,5 @@
 # Actividad Evaluada: Desarrollo de API REST con Node.js, Express, MongoDB y Testing Automatizado
 
-## Asignatura
-
-DSY1106 - Desarrollo Fullstack III
-
 ## Objetivo
 
 Desarrollar una API REST profesional utilizando Node.js y Express, aplicando arquitectura por capas, persistencia de datos mediante MongoDB, validaciones con Zod y pruebas automatizadas con Jest y Supertest.
