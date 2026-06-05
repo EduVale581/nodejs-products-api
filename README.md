@@ -69,13 +69,13 @@ pnpm init -y
 ### Producción
 
 ```bash
-pnpm install express mongoose dotenv zod cors
+pnpm add express mongoose dotenv zod cors
 ```
 
 ### Desarrollo
 
 ```bash
-pnpm install --save-dev jest supertest nodemon
+pnpm add --save-dev jest supertest nodemon
 ```
 
 ---
