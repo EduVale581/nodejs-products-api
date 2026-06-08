@@ -1,0 +1,39 @@
+services:
+  api:
+    build: .
+
+    container_name: products-api
+
+    ports:
+      - "3000:3000"
+
+    env_file:
+      - .env
+
+    depends_on:
+      - mongo
+
+    networks:
+      - products-network
+
+  mongo:
+    image: mongo:8
+
+    container_name: mongo-db
+
+    restart: unless-stopped
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongo-data:/data/db
+
+    networks:
+      - products-network
+
+volumes:
+  mongo-data:
+
+networks:
+  products-network:
